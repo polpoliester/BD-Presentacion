@@ -6,7 +6,7 @@ package presentacion;
 
 /**
  *
-  *@author Paul Alejandro Vazquez Cervantes
+ *@author Paul Alejandro Vazquez Cervantes
  * @author Santiago Bojorquez Leyva
  * @author Alejandra Miranda
  */

@@ -6,7 +6,9 @@ package presentacion;
 
 /**
  *
- * @author paulvazquez
+ *@author Paul Alejandro Vazquez Cervantes
+ * @author Santiago Bojorquez Leyva
+ * @author Alejandra Miranda
  */
 public class ActualizarPlacas extends javax.swing.JFrame {
 
