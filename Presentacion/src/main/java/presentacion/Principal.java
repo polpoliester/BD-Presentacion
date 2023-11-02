@@ -39,7 +39,7 @@ public class Principal extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        menuNuevoLicenciaTramites = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -54,6 +54,7 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar2.add(jMenu5);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Principal");
         setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel1.setBackground(new java.awt.Color(153, 0, 51));
@@ -112,9 +113,14 @@ public class Principal extends javax.swing.JFrame {
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-placa-de-matrícula-50 (1).png"))); // NOI18N
         jMenu3.setText("Placas");
 
-        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-automobile-67.png"))); // NOI18N
-        jMenuItem4.setText("Nuevo");
-        jMenu3.add(jMenuItem4);
+        menuNuevoLicenciaTramites.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-automobile-67.png"))); // NOI18N
+        menuNuevoLicenciaTramites.setText("Nuevo");
+        menuNuevoLicenciaTramites.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuNuevoLicenciaTramitesActionPerformed(evt);
+            }
+        });
+        jMenu3.add(menuNuevoLicenciaTramites);
 
         jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-automobile-48.png"))); // NOI18N
         jMenuItem3.setText("Cambio");
@@ -162,11 +168,20 @@ public class Principal extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void menuNuevoLicenciaTramitesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuNuevoLicenciaTramitesActionPerformed
+        // TODO add your handling code here:
+        
+        PrimPlacasForm primPlacasForm = new PrimPlacasForm();
+        
+        primPlacasForm.setVisible(true);
+    }//GEN-LAST:event_menuNuevoLicenciaTramitesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -219,10 +234,10 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenuItem menuNuevoLicenciaTramites;
     // End of variables declaration//GEN-END:variables
 }
