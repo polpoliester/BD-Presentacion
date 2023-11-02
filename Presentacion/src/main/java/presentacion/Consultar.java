@@ -47,7 +47,6 @@ public class Consultar extends javax.swing.JFrame {
         btnAvanzarPlaca = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(948, 484));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -75,6 +74,8 @@ public class Consultar extends javax.swing.JFrame {
         );
 
         jButton1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(102, 0, 0));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-buscar-30.png"))); // NOI18N
         jButton1.setText("Buscar Cliente");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,7 +134,7 @@ public class Consultar extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tblPlaca);
 
-        jLabel2.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel2.setText("Nombre del cliente: ");
 
         txtNombre.setEditable(false);
@@ -145,7 +146,7 @@ public class Consultar extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel3.setText("RFC del cliente: ");
 
         txtRfc.setEditable(false);
@@ -158,7 +159,7 @@ public class Consultar extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
         jLabel5.setText("Trámites de placas del cliente");
 
-        checkDiscapacidad.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        checkDiscapacidad.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         checkDiscapacidad.setText("Discapacidad");
         checkDiscapacidad.setEnabled(false);
         checkDiscapacidad.addActionListener(new java.awt.event.ActionListener() {
@@ -168,7 +169,7 @@ public class Consultar extends javax.swing.JFrame {
         });
 
         btnRegresarLicencia.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnRegresarLicencia.setText("←");
+        btnRegresarLicencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-adelante-35.png"))); // NOI18N
         btnRegresarLicencia.setBorderPainted(false);
         btnRegresarLicencia.setContentAreaFilled(false);
         btnRegresarLicencia.addActionListener(new java.awt.event.ActionListener() {
@@ -178,7 +179,7 @@ public class Consultar extends javax.swing.JFrame {
         });
 
         btnAvanzarLicencia.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnAvanzarLicencia.setText("→");
+        btnAvanzarLicencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-siguiente-35.png"))); // NOI18N
         btnAvanzarLicencia.setBorderPainted(false);
         btnAvanzarLicencia.setContentAreaFilled(false);
         btnAvanzarLicencia.addActionListener(new java.awt.event.ActionListener() {
@@ -188,7 +189,8 @@ public class Consultar extends javax.swing.JFrame {
         });
 
         btnRetrocederPlaca.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnRetrocederPlaca.setText("←");
+        btnRetrocederPlaca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-adelante-35.png"))); // NOI18N
+        btnRetrocederPlaca.setToolTipText("");
         btnRetrocederPlaca.setBorderPainted(false);
         btnRetrocederPlaca.setContentAreaFilled(false);
         btnRetrocederPlaca.addActionListener(new java.awt.event.ActionListener() {
@@ -198,7 +200,7 @@ public class Consultar extends javax.swing.JFrame {
         });
 
         btnAvanzarPlaca.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnAvanzarPlaca.setText("→");
+        btnAvanzarPlaca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-siguiente-35.png"))); // NOI18N
         btnAvanzarPlaca.setBorderPainted(false);
         btnAvanzarPlaca.setContentAreaFilled(false);
         btnAvanzarPlaca.addActionListener(new java.awt.event.ActionListener() {
@@ -213,16 +215,18 @@ public class Consultar extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(checkDiscapacidad)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1))
-                    .addComponent(txtNombre)
-                    .addComponent(txtRfc))
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)
+                            .addComponent(checkDiscapacidad)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
+                            .addComponent(txtRfc)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addComponent(jButton1)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 586, Short.MAX_VALUE)
@@ -231,15 +235,12 @@ public class Consultar extends javax.swing.JFrame {
                     .addComponent(jScrollPane2))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnRegresarLicencia)
-                    .addComponent(btnAvanzarPlaca)
-                    .addComponent(btnRetrocederPlaca))
-                .addContainerGap(21, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                    .addContainerGap(886, Short.MAX_VALUE)
-                    .addComponent(btnAvanzarLicencia)
-                    .addGap(23, 23, 23)))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(btnAvanzarPlaca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnRetrocederPlaca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnAvanzarLicencia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnRegresarLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -259,32 +260,33 @@ public class Consultar extends javax.swing.JFrame {
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtRfc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(checkDiscapacidad)
-                                    .addComponent(jButton1)))
+                                .addGap(18, 18, 18)
+                                .addComponent(checkDiscapacidad))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(98, 98, 98)
-                                .addComponent(btnRegresarLicencia)))
-                        .addGap(0, 22, Short.MAX_VALUE))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                                .addGap(32, 32, 32)
+                                .addComponent(btnAvanzarLicencia)
+                                .addGap(27, 27, 27)
+                                .addComponent(btnRegresarLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel5)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(33, 33, 33)
+                                .addComponent(btnAvanzarPlaca)
+                                .addGap(26, 26, 26)
+                                .addComponent(btnRetrocederPlaca))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(btnAvanzarPlaca)
-                        .addGap(28, 28, 28)
-                        .addComponent(btnRetrocederPlaca)))
-                .addGap(56, 56, 56))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(113, 113, 113)
-                    .addComponent(btnAvanzarLicencia)
-                    .addContainerGap(332, Short.MAX_VALUE)))
+                        .addGap(21, 21, 21)
+                        .addComponent(jButton1)))
+                .addGap(62, 62, 62))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

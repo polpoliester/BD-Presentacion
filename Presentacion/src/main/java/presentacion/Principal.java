@@ -88,19 +88,19 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(jLabel2))
         );
 
-        jMenu1.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Taskbar_&_Start_Menu.png")); // NOI18N
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Taskbar_&_Start_Menu.png"))); // NOI18N
         jMenu1.setText("Sistema");
 
-        jMenuItem1.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Delete.png")); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Delete.png"))); // NOI18N
         jMenuItem1.setText("Salir");
         jMenu1.add(jMenuItem1);
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Windows_View_Icon.png")); // NOI18N
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Windows_View_Icon.png"))); // NOI18N
         jMenu2.setText("Trámites");
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Security_Card.png")); // NOI18N
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Security_Card.png"))); // NOI18N
         jMenuItem2.setText("Licencia");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,12 +109,14 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem2);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Keyboard.png")); // NOI18N
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-placa-de-matrícula-50 (1).png"))); // NOI18N
         jMenu3.setText("Placas");
 
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-automobile-67.png"))); // NOI18N
         jMenuItem4.setText("Nuevo");
         jMenu3.add(jMenuItem4);
 
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-automobile-48.png"))); // NOI18N
         jMenuItem3.setText("Cambio");
         jMenu3.add(jMenuItem3);
 
@@ -122,23 +124,23 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
-        jMenu6.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\folder_beige_explorer.png")); // NOI18N
+        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/folder_beige_explorer.png"))); // NOI18N
         jMenu6.setText("Consulta");
 
-        jMenuItem6.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Windows_View_Detail.png")); // NOI18N
+        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Windows_View_Detail.png"))); // NOI18N
         jMenuItem6.setText("Trámite");
         jMenu6.add(jMenuItem6);
 
-        jMenuItem7.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Windows_View_Icon.png")); // NOI18N
+        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-exportar-pdf-48.png"))); // NOI18N
         jMenuItem7.setText("Reporte PDF");
         jMenu6.add(jMenuItem7);
 
         jMenuBar1.add(jMenu6);
 
-        jMenu7.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Help.png")); // NOI18N
+        jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Help.png"))); // NOI18N
         jMenu7.setText("Ayuda");
 
-        jMenuItem5.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Info.png")); // NOI18N
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Info.png"))); // NOI18N
         jMenuItem5.setText("Sobre Nosotros");
         jMenu7.add(jMenuItem5);
 

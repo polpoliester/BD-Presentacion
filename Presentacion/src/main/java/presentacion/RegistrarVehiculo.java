@@ -86,6 +86,7 @@ public class RegistrarVehiculo extends javax.swing.JFrame {
         jLabel7.setText("Color:");
 
         jButton1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 102, 0));
         jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Tips.png")); // NOI18N
         jButton1.setText("Registrar");
 

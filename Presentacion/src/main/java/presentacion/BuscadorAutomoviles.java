@@ -88,14 +88,15 @@ public class BuscadorAutomoviles extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jButton1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 102, 0));
         jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Documents\\SOFTWARE\\BASE DE DATOS\\toolbar\\toolbar\\Tips.png")); // NOI18N
         jButton1.setText("Aceptar");
 
         jButton2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jButton2.setText(">");
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-siguiente-35.png"))); // NOI18N
 
         jButton3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jButton3.setText("<");
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-adelante-35.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -119,9 +120,9 @@ public class BuscadorAutomoviles extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jButton3)
-                .addGap(151, 151, 151)
+                .addGap(159, 159, 159)
                 .addComponent(jButton2)
-                .addGap(398, 398, 398))
+                .addGap(370, 370, 370))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -133,7 +134,7 @@ public class BuscadorAutomoviles extends javax.swing.JFrame {
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2)
                     .addComponent(jButton3))

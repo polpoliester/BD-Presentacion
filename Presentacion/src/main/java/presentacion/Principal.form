@@ -25,7 +25,7 @@
         <Menu class="javax.swing.JMenu" name="jMenu1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\PC\Documents\SOFTWARE\BASE DE DATOS\toolbar\toolbar\Taskbar_&amp;_Start_Menu.png"/>
+              <Image iconType="3" name="/img/Taskbar_&amp;_Start_Menu.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Sistema"/>
           </Properties>
@@ -33,7 +33,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\PC\Documents\SOFTWARE\BASE DE DATOS\toolbar\toolbar\Delete.png"/>
+                  <Image iconType="3" name="/img/Delete.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Salir"/>
               </Properties>
@@ -43,7 +43,7 @@
         <Menu class="javax.swing.JMenu" name="jMenu2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\PC\Documents\SOFTWARE\BASE DE DATOS\toolbar\toolbar\Windows_View_Icon.png"/>
+              <Image iconType="3" name="/img/Windows_View_Icon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Tr&#xe1;mites"/>
           </Properties>
@@ -51,7 +51,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\PC\Documents\SOFTWARE\BASE DE DATOS\toolbar\toolbar\Security_Card.png"/>
+                  <Image iconType="3" name="/img/Security_Card.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Licencia"/>
               </Properties>
@@ -62,18 +62,24 @@
             <Menu class="javax.swing.JMenu" name="jMenu3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\PC\Documents\SOFTWARE\BASE DE DATOS\toolbar\toolbar\Keyboard.png"/>
+                  <Image iconType="3" name="/img/icons8-placa-de-matr&#xed;cula-50 (1).png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Placas"/>
               </Properties>
               <SubComponents>
                 <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/icons8-automobile-67.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Nuevo"/>
                   </Properties>
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/icons8-automobile-48.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Cambio"/>
                   </Properties>
                 </MenuItem>
@@ -84,7 +90,7 @@
         <Menu class="javax.swing.JMenu" name="jMenu6">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\PC\Documents\SOFTWARE\BASE DE DATOS\toolbar\toolbar\folder_beige_explorer.png"/>
+              <Image iconType="3" name="/img/folder_beige_explorer.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Consulta"/>
           </Properties>
@@ -92,7 +98,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\PC\Documents\SOFTWARE\BASE DE DATOS\toolbar\toolbar\Windows_View_Detail.png"/>
+                  <Image iconType="3" name="/img/Windows_View_Detail.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Tr&#xe1;mite"/>
               </Properties>
@@ -100,7 +106,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\PC\Documents\SOFTWARE\BASE DE DATOS\toolbar\toolbar\Windows_View_Icon.png"/>
+                  <Image iconType="3" name="/img/icons8-exportar-pdf-48.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Reporte PDF"/>
               </Properties>
@@ -110,7 +116,7 @@
         <Menu class="javax.swing.JMenu" name="jMenu7">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\PC\Documents\SOFTWARE\BASE DE DATOS\toolbar\toolbar\Help.png"/>
+              <Image iconType="3" name="/img/Help.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Ayuda"/>
           </Properties>
@@ -118,7 +124,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\PC\Documents\SOFTWARE\BASE DE DATOS\toolbar\toolbar\Info.png"/>
+                  <Image iconType="3" name="/img/Info.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Sobre Nosotros"/>
               </Properties>

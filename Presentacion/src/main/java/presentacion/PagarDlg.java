@@ -43,9 +43,9 @@ public class PagarDlg extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel2.setBackground(new java.awt.Color(185, 70, 69));
+        jPanel2.setBackground(new java.awt.Color(153, 0, 51));
 
-        jLabel1.setFont(new java.awt.Font("Impact", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Realice su pago");
 
@@ -54,9 +54,9 @@ public class PagarDlg extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(136, 136, 136)
                 .addComponent(jLabel1)
-                .addContainerGap(290, Short.MAX_VALUE))
+                .addContainerGap(164, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -66,23 +66,18 @@ public class PagarDlg extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel2.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel2.setText("Monto:");
 
-        txtMonto.setBackground(new java.awt.Color(255, 255, 255));
-        txtMonto.setForeground(new java.awt.Color(0, 0, 0));
         txtMonto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtMontoActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel3.setText("Concepto:");
 
-        txtConcepto.setBackground(new java.awt.Color(255, 255, 255));
         txtConcepto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtConceptoActionPerformed(evt);
@@ -91,7 +86,7 @@ public class PagarDlg extends javax.swing.JFrame {
 
         btnPagar.setBackground(new java.awt.Color(255, 255, 255));
         btnPagar.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        btnPagar.setForeground(new java.awt.Color(0, 0, 0));
+        btnPagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-pagar-35.png"))); // NOI18N
         btnPagar.setText("Pagar");
         btnPagar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +114,7 @@ public class PagarDlg extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnPagar)
-                .addGap(50, 50, 50))
+                .addGap(52, 52, 52))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -135,9 +130,9 @@ public class PagarDlg extends javax.swing.JFrame {
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel3)))
-                .addGap(74, 74, 74)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addComponent(btnPagar)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addGap(28, 28, 28))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
