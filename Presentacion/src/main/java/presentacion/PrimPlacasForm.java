@@ -5,17 +5,30 @@
  */
 package presentacion;
 
+import dominio.Persona;
+
 /**
  *
  * @author PC
  */
 public class PrimPlacasForm extends javax.swing.JFrame {
 
+    Persona persona;
+
     /**
      * Creates new form PrimPlacasForm
      */
     public PrimPlacasForm() {
         initComponents();
+    }
+
+    /**
+     * Creates new form PrimPlacasForm
+     */
+    public PrimPlacasForm(Persona persona) {
+        initComponents();
+        this.persona = persona;
+        this.llenarDatosPersona();
     }
 
     /**
@@ -288,17 +301,28 @@ public class PrimPlacasForm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_boxDiscapacidadClienteActionPerformed
 
+    public void llenarDatosPersona() {
+        this.txtNombreCliente.setText(persona.getNombres() + " "
+                + persona.getApellido_paterno() + " " + persona.getApellido_materno());
+        this.txtRFCCliente.setText(persona.getRfc());
+        this.txtTelefonoCliente.setText(persona.getTelefono());
+
+    }
     private void btnBuscarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarClienteActionPerformed
         // TODO add your handling code here:
-        
-        
+        BuscadorClientes buscadorClientes = new BuscadorClientes();
+        buscadorClientes.setVisible(true);
+        this.dispose();
+
+
     }//GEN-LAST:event_btnBuscarClienteActionPerformed
+
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
         // TODO add your handling code here:
-        
+
         PagarDlg pagarDlg = new PagarDlg();
-        
+
         pagarDlg.setVisible(true);
     }//GEN-LAST:event_btnAceptarActionPerformed
 
