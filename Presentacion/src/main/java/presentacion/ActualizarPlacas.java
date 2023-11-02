@@ -59,7 +59,7 @@ public class ActualizarPlacas extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         txtPrecio = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnAceptar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -138,6 +138,11 @@ public class ActualizarPlacas extends javax.swing.JFrame {
         btnBuscarCliente.setFont(new java.awt.Font("Impact", 1, 18)); // NOI18N
         btnBuscarCliente.setForeground(new java.awt.Color(0, 0, 0));
         btnBuscarCliente.setText("Buscar Cliente");
+        btnBuscarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarClienteActionPerformed(evt);
+            }
+        });
 
         txtNumSerie.setBackground(new java.awt.Color(255, 255, 255));
         txtNumSerie.setForeground(new java.awt.Color(0, 0, 0));
@@ -201,10 +206,10 @@ public class ActualizarPlacas extends javax.swing.JFrame {
         jLabel18.setForeground(new java.awt.Color(0, 0, 0));
         jLabel18.setText("$");
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("jButton1");
+        btnAceptar.setBackground(new java.awt.Color(255, 255, 255));
+        btnAceptar.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
+        btnAceptar.setForeground(new java.awt.Color(0, 0, 0));
+        btnAceptar.setText("Aceptar");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -281,7 +286,7 @@ public class ActualizarPlacas extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addGap(64, 64, 64)
                                     .addComponent(jLabel11)))
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING))))
+                            .addComponent(btnAceptar, javax.swing.GroupLayout.Alignment.TRAILING))))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -348,8 +353,8 @@ public class ActualizarPlacas extends javax.swing.JFrame {
                     .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel18))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addGap(0, 1, Short.MAX_VALUE))
+                .addComponent(btnAceptar)
+                .addGap(0, 11, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -366,14 +371,25 @@ public class ActualizarPlacas extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnBuscarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarClienteActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnBuscarClienteActionPerformed
+
     /**
      * @param args the command line arguments
      */
     
 
+    private void regresarPantallaPrincipal() {
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        dispose();
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAceptar;
     private javax.swing.JButton btnBuscarCliente;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
